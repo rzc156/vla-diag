@@ -1,5 +1,9 @@
 # vla_diag
 
+[![tests](https://github.com/rzc156/vla-diag/actions/workflows/test.yml/badge.svg)](https://github.com/rzc156/vla-diag/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+
 **在你相信一个 VLA 评测结果之前，先确认它不是假的。**
 
 一个轻量的评测诊断工具库。不训练模型，不跑仿真——只回答一个问题：
