@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vla-diag"
+version = "0.1.0"
+description = "Diagnose VLA evaluations before you trust them — checkpoint integrity, failure taxonomy, headroom analysis, power analysis"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "rzc156" }]
+dependencies = ["numpy>=1.22"]
+keywords = [
+    "vla", "robot-learning", "evaluation", "benchmark",
+    "reproducibility", "statistics", "embodied-ai",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+checkpoint = ["safetensors"]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/rzc156/vla-diag"
+Repository = "https://github.com/rzc156/vla-diag"
+Documentation = "https://github.com/rzc156/vla-diag/blob/main/CHECKS.md"
+Issues = "https://github.com/rzc156/vla-diag/issues"
+
+[tool.setuptools]
+packages = ["vla_diag"]
